@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  @include pad {
+    max-width: 720px;
+  }
+  @include mobile {
+    max-width: 372px;
+  }
+}
+
+%dark {
+  background-color: $primary;
+  color: $secondary;
+}
+
+%d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+

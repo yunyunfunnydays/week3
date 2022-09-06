@@ -1,0 +1,21 @@
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  max-width:100%;
+}
+
+body {
+  font-family: $font-noto, $font-roboto;
+  font-size: $fz-base;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+  &:hover {
+    color: $hover-color;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+    @extend %dark;
+    padding: $p-xs 0;
+    font-size: $fz-m;
+    font-weight: $fw-regular;
+    img{
+        width: 80px;
+    }
+    li:not(:last-child) {
+        margin-right: $m-xl;  
+    }
+    i {
+        display: none;
+    }
+    &-flex {
+        @extend %d-flex;
+        @extend %flex-between;
+    }
+    @include mobile {
+        ul {
+            display: none;
+        }
+        i {
+            display: block;
+        }
+    }
+}
