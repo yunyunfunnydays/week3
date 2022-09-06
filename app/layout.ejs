@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <script src="https://kit.fontawesome.com/d556ee0254.js" crossorigin="anonymous"></script>
 </head>
@@ -14,11 +16,9 @@
   <header class="header">
     <div class="container">
       <div class="header-flex">
-        <div>
-          <img src="./assets/images/logo-white.png" alt="">
-        </div>
+        <h1 class="logo">眼鏡官網</h1>
         <i class="fa-solid fa-bars"></i>
-        <ul class="header-flex">
+        <ul class="header-navbar">
           <li><a href="">系列鏡框</a></li>
           <li><a href="">門市據點</a></li>
           <li><a href="">部落格</a></li>
@@ -31,10 +31,50 @@
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <div class="container">
+      <div class="footer-flex">
+        <div>
+          <ul class="footer-navbar">
+            <li><a href="">首頁</a></li>
+            <li><a href="">系列鏡框</a></li>
+            <li><a href="">門市據點</a></li>
+            <li><a href="">部落格</a></li>
+            <li><a href="">常見問題</a></li>
+          </ul>
+          <div class="contact">
+            <div>
+              <h3>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+0800-000-000">0800-000-000</a>
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:glasses@business.com">glasses@business.com</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <ul class="footer-ic">
+          <li><a href=""><img src="./assets/images/ic-social-fb.png" alt=""></a></li>
+          <li><a href=""><img src="./assets/images/ic_social_ig.png" alt=""></a></li>
+          <li><a href=""><img src="./assets/images/ic_social_line.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="border"></div>
+      <div class="copyright">
+        <div>Copyright © 2020 Glasses.All rights reserved.</div>
+        <ul>
+          <li><a href="">隱私權政策</a></li>
+          <li><a href="">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+
   </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

@@ -2,26 +2,37 @@
     @extend %dark;
     padding: $p-xs 0;
     font-size: $fz-m;
-    font-weight: $fw-regular;
-    img{
-        width: 80px;
+
+    &-flex, &-navbar{
+        @extend %flex-row-between;
     }
-    li:not(:last-child) {
-        margin-right: $m-xl;  
+
+    li {
+        margin-left: $m-xl;
     }
+
     i {
         display: none;
     }
-    &-flex {
-        @extend %d-flex;
-        @extend %flex-between;
-    }
+
     @include mobile {
         ul {
             display: none;
         }
+
         i {
             display: block;
         }
     }
+}
+
+.logo {
+    width: 80px;
+    height: 48px;
+    background-image: url(../images/logo-white.png);
+    background-position: center;
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
 }
