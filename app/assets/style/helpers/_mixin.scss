@@ -9,3 +9,24 @@
     @content;
   }
 }
+
+@mixin bg-image($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @content;
+}
+
+
+@mixin image-rwd($desk-size, $pad-size: $d-size, $mobile-size: $pad-size) {
+  width: $desk-size;
+
+  @include pad {
+    width: $pad-size;
+  }
+
+  @include mobile {
+    width: $mobile-size;
+  }
+}

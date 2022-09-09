@@ -2,6 +2,7 @@
   margin: 0 auto;
   max-width: 1320px;
   padding: 0 12px;
+  height: 100%;
   @include pad {
     max-width: 720px;
   }
@@ -10,20 +11,9 @@
   }
 }
 
-%dark {
-  background-color: $primary;
-  color: $secondary;
+.container-padding-desk {
+  padding: 80px 0;
+  @include mobile{
+    padding: 80px 0;
+  }
 }
-
-%d-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-%flex-row-between {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-

@@ -1,6 +1,8 @@
 
 $primary: #AA0601 !default;
 $secondary: white !default;
+$primary-font: #650300 !default;
+$secondary-font:black  !default;
 $hover-color:rgba(224, 224, 224, 0.833) !default;
 
 $fw-thin: 100 !default;
@@ -46,3 +48,15 @@ $p-lg: $p-base * 6;
 $p-xl: $p-base * 8;
 $p-xxl: $p-base * 10;
 $p-huge: $p-base * 12;
+
+// 四欄23.6 三欄32 雙欄49 雙欄無空格50 單欄 51
+$c-1: 51%;
+$c-2: 49%;
+$c-3: 32%;
+$c-4: 23.6%;
+$c-2-no-gutter: 50%;
+$c-3-no-gutter: 33.33%;
+$c-4-no-gutter: 25%;
+
+
+

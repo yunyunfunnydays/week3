@@ -1,0 +1,22 @@
+%dark {
+  background-color: $primary;
+  color: $secondary;
+}
+
+%d-flex {
+  display: flex;
+  // flex-wrap: wrap;
+}
+
+%flex-row-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%hide-text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}

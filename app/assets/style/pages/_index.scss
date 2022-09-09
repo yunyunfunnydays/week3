@@ -1,0 +1,90 @@
+.banner {
+  height: calc(100vh - 80px);
+
+  @include bg-image("../images/home-header.png") {}
+
+  @include mobile {
+    @include bg-image("../images/home-header-sm.png") {}
+  }
+
+  &-flex {
+    @extend %d-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  h2 {
+    font-size: $fz-title;
+    font-weight: $fw-bold;
+    margin-bottom: 4px;
+
+    @include mobile {
+      font-size: $fz-ml;
+    }
+  }
+
+  h3 {
+    font-size: $fz-xl;
+
+    @include mobile {
+      font-size: $fz-sm;
+    }
+  }
+
+  &-btn {
+    padding: 6px 12px 6px 12px;
+    font-size: $fz-m;
+    background-color: $primary ;
+    color: $secondary;
+  }
+}
+
+.index {
+  h2{
+    font-size: $fz-subtitle;
+    @include mobile {
+      font-size: $fz-ml;
+    }
+  }
+  h3{
+    font-size: $fz-xl;
+    @include pad {
+      font-size: $fz-ml;
+    }
+  }
+  p{
+    font-size: $fz-sm;
+  }
+  .date {
+    font-size: $fz-base * 1.75;
+  }
+}
+
+.message {
+  max-width: 636px;
+  @include pad {
+    max-width: 576px;
+  }
+  margin: 0 auto;
+  .message-text {
+      font-size: $fz-base * 2.5;
+  
+      @include pad {
+        font-size: $fz-sm;
+      }
+    }
+    &-btn {
+      padding: $p-xs 176px ;
+      @include pad{
+        padding: $p-xs 136px;
+      }
+      @include mobile{
+        padding: $p-xs 0px;
+      }
+      font-size: $fz-ml;
+      background-color: $primary;
+      color: $secondary;
+
+    }
+}

@@ -2,6 +2,7 @@
     padding-top: $p-huge;
     padding-bottom: $p-lg;
     font-weight: $fw-bold;
+    color: $secondary-font;
 
     @include pad {
         padding-top: $p-xxl;
