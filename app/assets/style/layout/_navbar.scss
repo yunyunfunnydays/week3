@@ -23,7 +23,7 @@
 
     &-flex,
     &-navbar {
-        @extend %flex-row-between;
+        @extend %flex-row-between-center;
     }
 
     .logo {

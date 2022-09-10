@@ -18,15 +18,47 @@
   @content;
 }
 
-
-@mixin image-rwd($desk-size, $pad-size: $d-size, $mobile-size: $pad-size) {
-  width: $desk-size;
+// 產出li的響應式， 參數 li佔比, margin 大小
+@mixin li-card-rwd($desk-size, $desk-mb: 0, $pad-size: $desk-size, $pad-mb: 0, $mobile-size: $pad-size, $mobile-mb: 0) {
+  li {
+    width: $desk-size;
+  }
 
   @include pad {
-    width: $pad-size;
+    li {
+      width: $pad-size;
+    }
+
+    @if($pad-size <=$c-2-no-gutter & $pad-size >=$c-3) {
+      li:not(:nth-last-child(-n+2)) {
+        margin-bottom: $pad-mb;
+      }
+    }
+
+    @if($pad-size > $c-2-no-gutter) {
+      li:not(:last-child) {
+        margin-bottom: $pad-mb;
+      }
+    }
   }
 
   @include mobile {
-    width: $mobile-size;
+    li {
+      width: $mobile-size;
+    }
+
+    @if($mobile-size <=$c-2-no-gutter & $mobile-size >=$c-3) {
+      li:not(:nth-last-child(-n+2)) {
+        margin-bottom: $mobile-mb;
+      }
+    }
+
+    @if($mobile-size > $c-2-no-gutter) {
+      li:not(:last-child) {
+        margin-bottom: $mobile-mb;
+      }
+    }
   }
+
+  @content;
 }

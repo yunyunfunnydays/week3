@@ -17,12 +17,12 @@
   }
 
   &-bar {
-    @extend %flex-row-between;
+    @extend %flex-row-between-center;
     margin-bottom: $m-sm;
   }
 
   &-navbar {
-    @extend %flex-row-between;
+    @extend %flex-row-between-center;
     li {
       margin-right: $m-lg;
     }
@@ -33,7 +33,7 @@
   }
 
   &-ic {
-    @extend %flex-row-between;
+    @extend %flex-row-between-center;
 
     img {
       margin-left: $m-m;
@@ -76,7 +76,7 @@
 }
 
 .copyright {
-  @extend %flex-row-between;
+  @extend %flex-row-between-center;
   border-top: 1px solid white;
   padding-top: $m-m;
 
@@ -100,7 +100,7 @@
   }
 
   &-list {
-    @extend %flex-row-between;
+    @extend %flex-row-between-center;
 
     @include mobile {
       display: block;

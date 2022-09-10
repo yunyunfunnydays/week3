@@ -1,6 +1,7 @@
 
 $primary: #AA0601 !default;
 $secondary: white !default;
+$light: #FBF2F2 !default;
 $primary-font: #650300 !default;
 $secondary-font:black  !default;
 $hover-color:rgba(224, 224, 224, 0.833) !default;
@@ -50,7 +51,7 @@ $p-xxl: $p-base * 10;
 $p-huge: $p-base * 12;
 
 // 四欄23.6 三欄32 雙欄49 雙欄無空格50 單欄 51
-$c-1: 51%;
+$c-1: 100%;
 $c-2: 49%;
 $c-3: 32%;
 $c-4: 23.6%;
