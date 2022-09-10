@@ -1,45 +1,3 @@
-.banner {
-  height: calc(100vh - 80px);
-
-  @include bg-image("../images/home-header.png") {}
-
-  @include mobile {
-    @include bg-image("../images/home-header-sm.png") {}
-  }
-
-  &-flex {
-    @extend %d-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  h2 {
-    font-size: $fz-title;
-    font-weight: $fw-bold;
-    margin-bottom: 4px;
-
-    @include mobile {
-      font-size: $fz-ml;
-    }
-  }
-
-  h3 {
-    font-size: $fz-xl;
-
-    @include mobile {
-      font-size: $fz-sm;
-    }
-  }
-
-  &-btn {
-    padding: 6px 12px 6px 12px;
-    font-size: $fz-m;
-    background-color: $primary ;
-    color: $secondary;
-  }
-}
-
 .index {
   font-weight: bold;
   text-align: center;
@@ -204,32 +162,11 @@
 
 .message {
   background-color: $light;
-  &-list {
-    font-size: $fz-sm;
-    font-weight: $fw-regular;
-      label {
-        display: block;
-        color: $secondary-font;
-        text-align: left;
-        margin-bottom: $m-base;
-      }
-  
-      input,
-      textarea {
-        display: block;
-        padding: 6px 12px;
-        color: gray;
-        background-color: $light;
-        border: 1px solid #000;
-        width: -webkit-fill-available;o
-        resize: none;
-        margin-bottom: $m-xs;
-      }
-    }
 
   &-container {
     max-width: 636px;
     margin: 0 auto;
+
     @include pad {
       max-width: 576px;
     }
@@ -238,19 +175,44 @@
       max-width: 348px;
     }
   }
+&-text {
+  font-size: $fz-m;
+  margin-bottom: $m-sm;
 
-  &-text {
-    font-size: $fz-m;
-    margin-bottom: $m-sm;
+  @include pad {
+    font-size: $fz-sm;
+  }
+}
+  &-list {
+    font-size: $fz-sm;
+    font-weight: $fw-regular;
 
-    @include pad {
-      font-size: $fz-sm;
+    label {
+      display: block;
+      color: $secondary-font;
+      text-align: left;
+      margin-bottom: $m-base;
+    }
+
+    input,
+    textarea {
+      display: block;
+      padding: 6px 12px;
+      color: gray;
+      background-color: $light;
+      border: 1px solid #000;
+      width: -webkit-fill-available;
+      resize: none;
+      margin-bottom: $m-xs;
     }
   }
+
+  
+
   &-check-box {
     text-align: left;
-    margin-bottom: $m-lg;
     font-weight: $fw-regular;
+    margin-bottom: $m-lg;
 
     @include mobile {
       margin-bottom: $m-sm;
@@ -266,8 +228,8 @@
   }
 
   &-btn {
-    padding: $p-xs 176px;
     display: inline-block;
+    padding: $p-xs 176px;
     background-color: $primary;
 
     @include pad {
@@ -284,9 +246,9 @@
 
     input {
       font-size: $fz-ml;
-      background-color: $primary;
       color: $secondary;
       font-weight: $fw-bold;
+      background-color: $primary;
       border: 0px;
     }
   }
